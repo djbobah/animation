@@ -88,7 +88,13 @@ body {
 }
 
 @keyframes rotate_atom1 {
-  100% {
-    transform: translate(100px, 200px);
+  0% {
+    transform: translate(0, 30px);
+  }
+  10% {
+    transform: translate(15px, 60px);
+  }
+  20% {
+    transform: translate(60px, 190px);
   }
 }
