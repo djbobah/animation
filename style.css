@@ -23,14 +23,14 @@ body {
 .oval_120 {
   position: absolute;
   transform: rotate(120deg);
-  top: -8px;
+  top: 0px;
   left: -8px;
   content: "";
 }
 .oval_-120 {
   position: absolute;
   transform: rotate(-120deg);
-  top: -8px;
+  top: 0px;
   left: -8px;
 }
 .atom1 {
