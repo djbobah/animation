@@ -33,7 +33,7 @@ body {
   top: 0px;
   left: 0px;
 }
-.atom1 {
+.atom {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -45,13 +45,76 @@ body {
   bottom: 89px;
   /* left: 159px; центр */
   left: -19px;
-  transform-origin: 54px 0px;
+  /* transform-origin: 54px 0px; */
   /* transform-origin: left top; */
-  animation: updown 5s infinite;
+  /* animation: updown 5s infinite; */
 }
-.atom1::after {
+
+.elec_1 {
+  /* animation: lr 10s infinite; */
+}
+
+.elec_1:after {
+  animation: ud 10s infinite;
+  background-color: rgba(34, 0, 255, 0.7);
+  content: "";
+}
+
+@keyframes lr {
+  0% {
+    animation-timing-function: ease-in;
+    transform: translateX(0px);
+  }
+
+  25% {
+    animation-timing-function: ease-out;
+    transform: translateX(51px);
+  }
+
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateX(104px);
+  }
+
+  75% {
+    animation-timing-function: ease-out;
+    transform: translateX(51px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes ud {
+  0% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  25% {
+    animation-timing-function: ease-in;
+    transform: translateY(-102px);
+  }
+
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  75% {
+    animation-timing-function: ease-in;
+    transform: translateY(102px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* .atom1::after {
   animation: circle 4s;
-}
+} */
 /* .atom2 {
   position: absolute;
 
